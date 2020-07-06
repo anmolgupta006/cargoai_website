@@ -1,0 +1,180 @@
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Hugo Fresh Theme
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy 
+  description: 
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/cargoai.png
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: The smarter way to book your cargo shipments.
+    # Hero subtitle (optional)
+    subtitle: CargoAI is the first and only airfreight booking AI-enabled platform that connect every airlines and freight forwarders. From booking to bidding, allotment and ad hoc; CargoAI can do it all. Customized price recommendations based on your own personal protected data profile sets us apart and makes your business go digital. And by the way, We get you the best prices. Period. 
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    clientlogos:
+    - systek
+    - tribe
+    - kromo
+    - infinite
+    - gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Airlines
+    url: /airlines
+  - title: Feature
+    url: /feature
+  - title: About Us
+    sublinks:
+    - title: Meet the team
+      url: /team
+    - title: Career
+      url: /career
+
+  
+  - title: Log in/Sign up
+    url: /
+    button: true
+  section1:
+    title: CargoAI Features
+    subtitle: 
+    tiles:
+    - title: Find the best price
+      icon: mouse-globe
+      text: Save time and money. CargoAI is the only platform that gives forwarders access all airlines to view, book and bid on flights. This allows for fair and equitable competition so that airlines and forwarders both can get the best price on the market. Search smarter not harder. 
+      url: /
+      buttonText: Free trial
+    - title: Advanced Analytics
+      icon: laptop-cloud
+      text: Your report is based on current market trends, route price history, your personal previous orders, space availability and price. This data culminates into a report contained your current status, recommendations and how you compare to your competition.  
+      url: /
+      buttonText: Get started
+    - title: Dynamic Messaging
+      icon: plug-cloud
+      text: Airlines and forwarders can negotiate in real time through our messaging portal. In this portal you can accept, reject, negotiate and rate the quality of your shipment. All of this information goes towards building your profile, meaning that more you use it the easier it becomes to book.
+      url: /
+      buttonText: Get started
+  section2:
+    title: Optimize your buying process
+    subtitle: 
+    features:
+    - title: Instantly Search
+      text: Search better with three distinct options. Whether your shipment is adhoc, allotment or if you want to negotiate rates for the season- it is all in one place in CargoAI. The results page is dynamic and constantly evolving to better bit a forwarders search.  
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Bid for best price
+      text: Place multiple bids at once on a variety of airlines and routes. Organize bids based on quality rating and response time. Both airlines and forwarders can organize their bids in their bid status based on the urgency of the response. Machine learning can suggest bids based on the current trends and previous bids placed. Easy tool to manage and store negotiated rate
+      icon: doc-sync
+    - title: Filter on Quality
+      text: Transparency is the principle feature of the results so you’ll not only see the time, duration and price of a route but the response rating, quality rating and the estimated delay.Filter not only in your search but organize your placed bids by quality as well.
+      icon: mobile-feed
+    - title: Track and Trace
+      text: Track your shipment from its bid status to when it is actually in route on the flight. See its progress hour by hour, when it stops and when it takes off. Estimated delays are factored into the estimated time of arrival. When your shipment is due to arrive you can report if it was delayed or damaged and you’ll know next time you book a shipment. 
+      icon: mobile-feed
+  section3:
+    title: All in One platform
+    subtitle: Search, Bid, Book and Track
+    image: illustrations/mockups/web_app_bids.png
+    buttonText: Get started
+    buttonLink: "#"
+  section4:
+    title: Dynamic Messaging
+    subtitle: 
+    clients:
+    - name: Instant Message
+      quote: >+
+            No need of phone and email
+            No what’s app for internal team communication.
+      job: Accountant
+      img: 1
+    - name: Group Based Message
+      quote: >+
+              Make a group chat, with multiple users (Forwarder and Airlines).
+              Make a group chat, with internal teams.              
+
+      job: Financial Analyst
+      img: 2
+    - name: Bid Based Message
+      quote: >+
+             Instantly get the message and notification for a bid
+             Chat directly with the people.
+             Instantly settle down any queries.
+
+      job: HR Manager
+      img: 3
+  section5: true
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lucperkins/github-fresh
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://dribbble.com/#
+      icon: dribbble
+    - link: https://facebook.com/#
+      icon: facebook
+    - link: https://twitter.com/lucperkins
+      icon: twitter
+    - link: https://bitbucket.org/#
+      icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
